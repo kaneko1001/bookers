@@ -1,1 +1,6 @@
-<p>Book was successfully created.</p>
+
+<div class="show-title">Title: <%= @book.title %></div>
+
+<div class="show-body">Body: <%= @book.body %></div>
+
+<%= link_to 'Edit', edit_book_path %> | <%= link_to 'Back', '/books' %>

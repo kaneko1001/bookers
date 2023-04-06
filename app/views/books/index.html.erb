@@ -12,9 +12,9 @@
     <tr>
       <tb><%= book.title %></tb>
       <tb><%= book.body %></tb>
-      <tb>Show仮</tb>
-      <tb>Edit仮</tb>
-      <tb>Destroy仮</tb>
+      <tb><%= link_to 'Show', "/books/#{book.id}" %></tb>
+      <tb><%= link_to 'Edit', "/books/#{book.id}/edit" %></tb>
+      <tb><%= link_to 'Destroy', book_path(@book.id), method: :delete %></tb>
     </tr>
   </tbody>
 </table>
