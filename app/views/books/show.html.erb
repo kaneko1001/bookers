@@ -3,9 +3,9 @@
 </div>
 
 <nain>
-  <div class="show-title">Title: <%= @book.title %></div>
+  <div class="show-content"><b>Title: </b><%= @book.title %></div>
 
-  <div class="show-body">Body: <%= @book.body %></div>
+  <div class="show-content"><b>Body: </b><%= @book.body %></div>
 
   <div class="show-link">
     <%= link_to 'Edit', edit_book_path %> | <%= link_to 'Back', '/books' %>
